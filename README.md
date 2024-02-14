@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Stouks X [Beta V1.1]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
+local Window = OrionLib:MakeWindow({Name = "Stouks X [Pre-Testes]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
 local Tab = Window:MakeTab({
-	Name = "Combat",
+	Name = "Discord",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -13,22 +13,59 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+Tab:AddParagraph("Por favor entre no nosso discord","Please Join us discord")	
+Tab:AddParagraph("Aviso","Digite o link abaixo no navegador:D para entrar no server")	
+Tab:AddButton({
+	Name = "https://discord.gg/wn9sxQymcp",
+	Callback = function()                       OrionLib:MakeNotification({
+		Name = "Error 134",
+		Content = "O link nao pode ser copíado digite manualmente",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddParagraph("Nao testado em Delta,Trigon Evo,Hydrogen,Vegas X","Testados:Fluxus Arcerus X neon")
+
+local Tab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 Tab:AddButton({
 	Name = "Auto Parry Hosvile",
-	Callback = function()
+	Callback = function()               OrionLib:MakeNotification({
+		Name = "Executado",
+		Content = "Obrigado por escolher o Stouks X",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
       		print("You are good for select hosvile")                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
 	end    
 })
 Tab:AddButton({
 	Name = "Auto Parry Red Circle",
-	Callback = function()
+	Callback = function()               OrionLib:MakeNotification({
+		Name = "Executado",
+		Content = "Obrigado por escolher o Stouks X",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})                         
       		print("So.....")                    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()
 	end    
 })
 
 Tab:AddButton({
-	Name = "Mobile Spam Buttion",
-	Callback = function()
+	Name = "Mobile Spam Button",
+	Callback = function()               OrionLib:MakeNotification({
+		Name = "Executado",
+		Content = "Obrigado por escolher o Stouks X",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
       		print("Uhhhhhhh i need remove the giant code of script")                        --[[
 				WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 			]]
@@ -51,7 +88,7 @@ Tab:AddButton({
 			end
 			
 			local function showNotification()
-				game.StarterGui:SetCore("SendNotification", {Title = "Active or Desabilitef", Text = "Made By Stouks X", Duration = 0})
+				game.StarterGui:SetCore("SendNotification", {Title = "Active or Desabilited", Text = "Made By Stouks X", Duration = 1})
 			end
 			
 			button.MouseButton1Click:Connect(function()
