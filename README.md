@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Stouks X [Pre-Testes]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
+local Window = OrionLib:MakeWindow({Name = "Stouks X [Versão Gratis]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
 local Tab = Window:MakeTab({
 	Name = "Discord",
 	Icon = "rbxassetid://4483345998",
@@ -122,10 +122,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("Aviso","")
-Tab:AddParagraph("Essa pagina so ira funcionar se voce tiver a versao premium:D","")
-Tab:AddParagraph("So e possivel pegar a versao premium por evento","")
 
 
 --[[
