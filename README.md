@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 
 OrionLib:MakeNotification({
 	Name = "Script Blade Ball",
-	Content = "Please Buy the premium edition",
+	Content = "Oi CuzCuz com Ovo:D",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -98,7 +98,38 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddDropdown({
+	Name = "Curve a bola:Teste",
+	Default = "Nenhuma",
+	Options = {"Nenhuma", "Frente", "Atras", "Esquerda", "Direita"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddBind({
+	Name = "Tecla spamm pc",
+	Default = Enum.KeyCode.E,
+	Hold = true,
+	Callback = function()      
+		print("F")
+	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Conteudos Premiums",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Aviso","")
+Tab:AddParagraph("Essa pagina so ira funcionar se voce tiver a versao premium:D","")
+Tab:AddParagraph("So e possivel pegar a versao premium por evento","")
+
+
 --[[
+
 Name = <string> - The name of the textbox.
 Default = <string> - The default value of the textbox.
 TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
